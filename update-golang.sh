@@ -6,7 +6,7 @@
 #
 # PIPETHIS_AUTHOR udhos
 
-version=0.18
+version=0.19
 
 set -o pipefail
 
@@ -28,7 +28,7 @@ log_stdin() {
 # defaults
 release_list=https://golang.org/doc/devel/release.html
 source=https://storage.googleapis.com/golang
-destination=/usr/local
+destination=/usr/lib
 release=1.11.2 ;# just the default. the script detects the latest available release.
 profiled=/etc/profile.d/golang_path.sh
 arch_probe="uname -m"
@@ -100,7 +100,7 @@ cache=$destination
 
 show_vars() {
     echo user: "$(id)"
-    
+
     cat <<EOF
 RELEASE_LIST=$release_list
 SOURCE=$source
