@@ -2,9 +2,9 @@
 #
 # update-golang is a script to easily fetch and install new Golang releases
 #
-# Home: https://github.com/udhos/update-golang
+# Home: https://github.com/namlose/update-golang
 #
-# PIPETHIS_AUTHOR udhos
+# PIPETHIS_AUTHOR udhos (&& namlose)
 
 version=0.19
 
@@ -250,7 +250,7 @@ path_remove() {
     fi
 }
 
-default_goroot=/usr/local/go
+default_goroot=/usr/lib/go
 
 path() {
     path_remove
